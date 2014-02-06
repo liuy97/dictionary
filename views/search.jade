@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  
+  form(name="input", action="/search", method="get")
+    input(type="text", name="q")
+    input(type="submit", value="Submit")
+
+  p Query #{query} result:
+  ul
+  each val in [1, 2, 3, 4, 5]
+    li= val
