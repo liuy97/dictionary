@@ -1,0 +1,20 @@
+#draggableCadidates {
+  font-size: 14px;
+  position: absolute;
+  background: white;
+  border: none;
+  height: 50px;
+  padding: 4px;
+  background-color: transparent; }
+  #draggableCadidates .pinyin {
+    background: burlywood; }
+  #draggableCadidates ul.candidates {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    #draggableCadidates ul.candidates li {
+      float: left;
+      padding: 0.2em;
+      background: lightblue; }
+    #draggableCadidates ul.candidates li.current {
+      background: burlywood; }

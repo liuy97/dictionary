@@ -3,11 +3,84 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	font: 15px/22.5px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	margin: 0;
+	background: #0769AD;	
+}
+
+textarea.chinese {
+    min-width: 270px;
+    width: 100%;
+    height: 200px;
+    line-height: 24px;
+    min-height: 100px;
+    overflow-y: hidden; /* fixes scrollbar flash - kudos to @brettjonesdev */
+    padding-top: 1.1em; /* fixes text jump on Enter keypress */
+	margin: 0 auto;
+}
+
+#content {
+	margin-left:auto;
+	margin-right:auto;
+	width: 80%;
+	margin-top: 10px;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.18) !important;
+    border-color: #E7E7E7;
+}
+
+.nav {
+	background-color: rgba(0, 0, 0, 0.18);
+	border-radius: 10px 10px 0 0;
+	border-right: 1px solid rgba(2, 2, 2, 0.28);
+	border-left: 1px solid rgba(2, 2, 2, 0.28);
+	border-top: 1px solid rgba(250, 250, 250, 0.27);
+	-webkit-box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+	box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+	-webkit-box-shadow: 0 0 3px rgba(1, 1, 1, 0.7);
+	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+}
+
+.nav ul {
+	margin: 0;
+	float: left;
+	width: 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	list-style:none;
+}
+
+.nav li {
+	float: left;
+	font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	margin-right: 2px;
+}
 
 
+.nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 6px 10px;
+	display: block;
+	border: 1px solid transparent;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
+}
 
-
-
+.nav li a:hover,
+.nav li.active a {
+	background: none;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.25);
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+}
 
 
 

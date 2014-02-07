@@ -16,7 +16,32 @@ html
     script(src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js")
 
   body
-    block content
+    div(class="navbar navbar-fixed-top")
+        div(class="container")
+            div(class="navbar-header")
+                button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+                    span(class="icon-bar")
+                    span(class="icon-bar")
+                    span(class="icon-bar")
+
+                a(class="navbar-brand", href="/") Dictionary
+
+            div(class="navbar-collapse collapse")
+                ul(class="nav navbar-nav")
+                    li(class="active")
+                        a(href="/")
+                            img(src="/img/home.png")
+                    li
+                        a(href="/search")
+                            img(src="/img/book.png")
+
+    div(class="container")
+        block content
+
+        hr
+
+        footer
+            p &copy; Company 2013
 
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
 
