@@ -5,8 +5,8 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
 var query = require('./routes/query');
+var pinyin = require('./routes/pinyin');
 var http = require('http');
 var path = require('path');
 
@@ -30,8 +30,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 app.get('/search', query.search);
+app.get('/pinyin', pinyin.pinyin);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

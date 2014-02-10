@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  
+  form(name="input", action="/pinyin", method="get")
+    input(type="text", name="q")
+    input(type="submit", value="Submit")
+
+  p Hanzi #{hanzi} result:
+  p Pinyin #{pinyin}:
