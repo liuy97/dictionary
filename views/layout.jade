@@ -29,14 +29,14 @@ html
             div(class="navbar-collapse collapse")
                 ul(class="nav navbar-nav")
                     li(class="active")
-                        a(href="/")
-                            img(src="/img/home.png")
+                        a(href="/") Home
                     li
-                        a(href="/search")
-                            img(src="/img/book.png")
+                        a(href="/pinyin") pinyin
 
     div(class="container")
-        block content
+        div(id="content")
+            div(class="centercontent")
+                block content
 
         hr
 

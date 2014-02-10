@@ -228,6 +228,9 @@ https://github.com/Codecademy/textarea-helper
         };
 
         self.keypressHandler = function (event) {
+            if (event.ctrlKey) {
+                return true;
+            }
             if (!self.checkPinyinInput()) {
                 return true;
             }
